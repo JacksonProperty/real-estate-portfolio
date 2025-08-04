@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Real Estate Projects</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Your Name - Real Estate Agent</h1>
+    <p>Discover the best properties and projects</p>
+  </header>
+
+  <main>
+    <section id="projects">
+      <!-- Example Project Card -->
+      <div class="card" onclick="openModal('Project A', 'Location A', 'desc-a.jpg', 'A beautiful modern house...')">
+        <img src="project1.jpg" alt="Project A">
+        <h2>Project A</h2>
+        <p>Location A</p>
+      </div>
+
+      <!-- Duplicate and update for more projects -->
+      <div class="card" onclick="openModal('Project B', 'Location B', 'project2.jpg', 'Spacious condominium with city view.')">
+        <img src="project2.jpg" alt="Project B">
+        <h2>Project B</h2>
+        <p>Location B</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact me: 📞 012-3456789 | ✉️ email@example.com</p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span onclick="closeModal()" class="close">&times;</span>
+      <img id="modal-img" src="" alt="">
+      <h2 id="modal-title"></h2>
+      <p id="modal-location"></p>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
